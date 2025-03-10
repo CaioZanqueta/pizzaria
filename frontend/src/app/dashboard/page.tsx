@@ -1,10 +1,9 @@
-import styles from '../page.module.scss'
-import logoImg from '/public/logo.svg'
+import { Orders } from './components/orders'
 
 export default function Dashboard() {
   return (
     <>
-      <h1>Pagina painel</h1>
+      <Orders />
     </>
   )
 }
