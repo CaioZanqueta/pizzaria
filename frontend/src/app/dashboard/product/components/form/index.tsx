@@ -64,7 +64,7 @@ export function Form({ categories }: Props) {
     if (e.target.files && e.target.files[0]) {
       const image = e.target.files[0]
 
-      if (image.type !== "image/jpeg" && image.type !== "image/png") {
+      if (image.type !== "image/jpeg" && image.type !== "image/png" && image.type !== "image/webp") {
         toast.warning("Formato não permitido!")
         return
       }
